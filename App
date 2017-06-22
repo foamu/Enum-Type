@@ -1,0 +1,42 @@
+package example;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		
+		Biome biome = Biome.TAIGA;
+		
+		switch(biome) {
+		case ARID_DESERT:
+			System.out.println("Feeling a little hot?");
+			break;
+		case SUBTROPICAL_RAINFOREST:
+			System.out.println("Feeling a little wet?");
+			break;
+		case TAIGA:
+			System.out.println("Feeling a little cold?");
+			break;
+		default:
+			break;
+		
+		}
+		// Calling the overridden toString method for the enum type Biome
+		System.out.println(Biome.ARID_DESERT);
+    
+		// Verifying that ARID_DESERT belongs to the enum type Biome (a kind of class)
+		System.out.println(Biome.ARID_DESERT.getClass());
+    
+		// Checking if Biome.ARID_DESERT is an instance of an Enum type, which returns true.
+		System.out.println(Biome.ARID_DESERT instanceof Enum);
+    
+		// Calling the getType method inside the enum Biome
+		System.out.println(Biome.SUBTROPICAL_RAINFOREST.getType());
+		
+		// Creating an instance of Biome using valueOf to set its value, in this case setting it to TAIGA
+		Biome biome2 = Biome.valueOf("TAIGA");
+		System.out.println(biome2);
+		
+	}
+
+}
