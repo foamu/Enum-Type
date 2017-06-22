@@ -23,13 +23,16 @@ public class App {
 		}
 		// Calling the overridden toString method for the enum type Biome
 		System.out.println(Biome.ARID_DESERT);
-    
+		
+		// Using the default Enum method name(), we can get the Enum name as a string.
+		System.out.println("Enum name as a string: " + Biome.ARID_DESERT.name());
+		
 		// Verifying that ARID_DESERT belongs to the enum type Biome (a kind of class)
 		System.out.println(Biome.ARID_DESERT.getClass());
-    
+		
 		// Checking if Biome.ARID_DESERT is an instance of an Enum type, which returns true.
 		System.out.println(Biome.ARID_DESERT instanceof Enum);
-    
+		
 		// Calling the getType method inside the enum Biome
 		System.out.println(Biome.SUBTROPICAL_RAINFOREST.getType());
 		
