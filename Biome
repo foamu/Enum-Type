@@ -1,0 +1,23 @@
+package example;
+
+public enum Biome {
+	
+	ARID_DESERT("Arid Desert"), SUBTROPICAL_RAINFOREST("Subtropical Rainforest"), TAIGA("Taiga");
+	
+	private String type;
+	
+	// Enum constructors can only be package-private or private.
+	Biome(String type) {
+		this.type = type;
+	}
+
+	public String getType() {
+		return type;
+	}
+	
+	public String toString() {
+		return "This biome is called: " + type;
+	}
+	
+
+}
